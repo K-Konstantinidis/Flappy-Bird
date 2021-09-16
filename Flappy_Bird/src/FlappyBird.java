@@ -16,8 +16,6 @@ import javax.swing.Timer;
 
 public class FlappyBird implements ActionListener, KeyListener{
 	
-	public static FlappyBird flappyBird;
-	
 	private final int WIDTH = 800, HEIGHT = 800;
 	
 	public Renderer renderer;
@@ -35,10 +33,6 @@ public class FlappyBird implements ActionListener, KeyListener{
 	static final int DELAY = 20; //Speed of snake
 	
 	Image image = new ImageIcon(this.getClass().getResource("/fpblue.png")).getImage();
-	
-	public static void main(String[] args) {
-		flappyBird = new FlappyBird();
-	}
 	
 	public FlappyBird() {
 			JFrame jframe = new JFrame();
